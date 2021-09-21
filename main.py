@@ -39,17 +39,17 @@ while checker():
         if sucvat == "":
             for i in messages:
                 sendMessage(token, channel, i)
-                sleep(randrange(1, 3))
+                sleep(randrange(1, 6))
 
         elif sucvat == "@everyone":
             for i in messages:
                 sendMessage(token, channel, f'{sucvat}' + " " + i)
-                sleep(randrange(1, 3))
+                sleep(randrange(1, 6))
         
         else:
             for i in messages:
                 sendMessage(token, channel, f'<@{sucvat}>' + " " + i)
-                sleep(randrange(1, 3))
+                sleep(randrange(1, 6))
     except:
         print("Error")
         break
